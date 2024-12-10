@@ -1,0 +1,51 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './animations.css';
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  /* Adjustments for mobile */
+  .container {
+      padding: 10px;
+  }
+  .header {
+      font-size: 20px;
+  }
+  /* ... other mobile styles ... */
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 900px) {
+  /* Adjustments for tablet */
+  .container {
+      padding: 20px;
+  }
+  .header {
+    font-size: 24px;
+}
+/* ... other tablet styles ... */
+}
+
+/* Desktop styles */
+@media (min-width: 901px) {
+  /* Adjustments for desktop */
+  .container {
+      padding: 30px;
+  }
+  .header {
+      font-size: 28px;
+  }
+  /* ... other desktop styles ... */
+}
